@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        button, select {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text to Speech</h1>
+    <textarea id="textInput" placeholder="Enter text here..."></textarea><br>
+    <select id="languageSelect">
+        <option value="en-US">English</option>
+        <option value="hi-IN">Hindi</option>
+    </select>
+    <br>
+    <button onclick="speakText()">Speak</button>
+    <button onclick="downloadAudio()">Download</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
